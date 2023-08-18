@@ -1,7 +1,5 @@
 export default async function Home() {
-	const { data } = await fetch("http://localhost:3000/api/hello").then((res) =>
-		res.json()
-	);
+	const { data } = await fetch("/api/hello").then((res) => res.json());
 
 	console.log(data);
 
